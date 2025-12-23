@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/username/vaizbtgads.git"
+    "url": "git+https://github.com/XTEID/vaizbtgads.git"
   },
   "keywords": [
     "ad-blocker",
@@ -28,9 +28,9 @@
   "author": "Developer",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/username/vaizbtgads/issues"
+    "url": "https://github.com/XTEID/vaizbtgads/issues"
   },
-  "homepage": "https://github.com/username/vaizbtgads#readme",
+  "homepage": "https://github.com/XTEID/vaizbtgads#readme",
   "engines": {
     "node": ">=18",
     "npm": ">=9"

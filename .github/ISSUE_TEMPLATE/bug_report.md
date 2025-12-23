@@ -1,56 +1,32 @@
 ---
-name: Bug Report
-about: Create a report to help us improve Vaizbtgads
-title: '[BUG] '
-labels: 'bug'
+name: Bug report
+about: Create a report to help us improve
+title: ''
+labels: bug
 assignees: ''
+
 ---
 
-## 🐛 Bug Description
+**Describe the bug**
 A clear and concise description of what the bug is.
 
-## 🔄 Steps to Reproduce
+**To Reproduce**
 Steps to reproduce the behavior:
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
 4. See error
 
-## ✅ Expected Behavior
+**Expected behavior**
 A clear and concise description of what you expected to happen.
 
-## ❌ Actual Behavior
-A clear and concise description of what actually happened.
-
-## 📸 Screenshots
+**Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-## 🌐 Environment
-**Browser:**
-- [ ] Firefox (version: )
-- [ ] Chrome (version: )
-- [ ] Edge (version: )
-- [ ] Other: 
+**Browser (please complete the following information):**
+ - Browser: [e.g. Firefox, Chrome]
+ - Version: [e.g. 22]
+ - Extension Version: [e.g. 1.0.0]
 
-**Operating System:**
-- [ ] Windows (version: )
-- [ ] macOS (version: )
-- [ ] Linux (distribution: )
-
-**Extension Version:** 
-(Check in extension manager or popup)
-
-## 📋 Additional Context
+**Additional context**
 Add any other context about the problem here.
-
-## 🔍 Console Errors
-If applicable, include any console errors:
-```
-Paste console errors here
-```
-
-## 🧪 Troubleshooting Tried
-- [ ] Disabled other extensions
-- [ ] Cleared browser cache
-- [ ] Restarted browser
-- [ ] Reinstalled extension

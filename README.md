@@ -10,7 +10,7 @@
 [![Firefox Add-on](https://img.shields.io/badge/Firefox-Add--on-orange)](https://addons.mozilla.org/)
 [![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-green)](https://chrome.google.com/webstore/)
 
-[📥 Download](#instalasi) • [📖 Dokumentasi](#dokumentasi) • [🐛 Report Bug](https://github.com/username/vaizbtgads/issues) • [💡 Request Feature](https://github.com/username/vaizbtgads/issues)
+[📥 Download](#instalasi) • [📖 Dokumentasi](#dokumentasi) • [🐛 Report Bug](https://github.com/XTEID/vaizbtgads/issues) • [💡 Request Feature](https://github.com/XTEID/vaizbtgads/issues)
 
 </div>
 
@@ -54,7 +54,7 @@
 ### Manual Installation (Development)
 ```bash
 # Clone repository
-git clone https://github.com/username/vaizbtgads.git
+git clone https://github.com/XTEID/vaizbtgads.git
 cd vaizbtgads
 
 # Install dependencies
@@ -178,10 +178,10 @@ Proyek ini dilisensikan di bawah [GNU General Public License v3.0](LICENSE) - li
 
 ## 📞 Support
 
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/username/vaizbtgads/issues)
-- 💡 **Feature Requests**: [GitHub Issues](https://github.com/username/vaizbtgads/issues)
+- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/XTEID/vaizbtgads/issues)
+- 💡 **Feature Requests**: [GitHub Issues](https://github.com/XTEID/vaizbtgads/issues)
 - 📧 **Email**: support@vaizbtgads.com
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/username/vaizbtgads/discussions)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/XTEID/vaizbtgads/discussions)
 
 ---
 
@@ -189,6 +189,6 @@ Proyek ini dilisensikan di bawah [GNU General Public License v3.0](LICENSE) - li
 
 **Dibuat dengan ❤️ untuk pengalaman browsing yang lebih baik**
 
-[⭐ Star this repo](https://github.com/username/vaizbtgads) • [🍴 Fork](https://github.com/username/vaizbtgads/fork) • [📢 Share](https://twitter.com/intent/tweet?text=Check%20out%20Vaizbtgads%20-%20Content%20Blocker%20untuk%20Browser&url=https://github.com/username/vaizbtgads)
+[⭐ Star this repo](https://github.com/XTEID/vaizbtgads) • [🍴 Fork](https://github.com/XTEID/vaizbtgads/fork) • [📢 Share](https://twitter.com/intent/tweet?text=Check%20out%20Vaizbtgads%20-%20Content%20Blocker%20untuk%20Browser&url=https://github.com/XTEID/vaizbtgads)
 
 </div>
