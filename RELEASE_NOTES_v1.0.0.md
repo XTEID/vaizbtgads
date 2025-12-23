@@ -74,6 +74,10 @@ Selamat datang di **Vaizbtgads**, content blocker yang efisien untuk browser Fir
 - [ ] **v1.4**: Mobile browser support
 - [ ] **v1.5**: Custom scriptlet injection
 
+## 📋 Full Changelog
+
+**See the complete changelog**: [CHANGELOG.md](https://github.com/XTEID/vaizbtgads/blob/main/CHANGELOG.md)
+
 ## 🤝 Kontribusi
 
 Proyek ini open source dan menerima kontribusi dari komunitas:

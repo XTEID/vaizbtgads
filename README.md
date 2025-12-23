@@ -10,7 +10,7 @@
 [![Firefox Add-on](https://img.shields.io/badge/Firefox-Add--on-orange)](https://addons.mozilla.org/)
 [![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-green)](https://chrome.google.com/webstore/)
 
-[📥 Download](#instalasi) • [📖 Dokumentasi](#dokumentasi) • [🐛 Report Bug](https://github.com/XTEID/vaizbtgads/issues) • [💡 Request Feature](https://github.com/XTEID/vaizbtgads/issues)
+[📥 Download](#instalasi) • [📖 Dokumentasi](#dokumentasi) • [📋 Changelog](CHANGELOG.md) • [🐛 Report Bug](https://github.com/XTEID/vaizbtgads/issues) • [💡 Request Feature](https://github.com/XTEID/vaizbtgads/issues)
 
 </div>
 
@@ -132,6 +132,19 @@ vaizbtgads/
 ├── store-assets/          # Store submission materials
 └── dist/                  # Build output
 ```
+
+## 📋 Changelog
+
+Lihat [CHANGELOG.md](CHANGELOG.md) untuk riwayat lengkap perubahan, fitur baru, dan perbaikan bug di setiap versi.
+
+### Versi Terbaru (v1.0.0)
+- 🎉 Initial release dengan fitur lengkap ad blocking
+- 🛡️ Privacy protection dan tracker blocking
+- ⚡ Performa tinggi dengan minimal impact
+- 🎯 Dashboard dan popup interface yang user-friendly
+- 🌐 Cross-browser support (Firefox & Chrome)
+
+[**Lihat changelog lengkap →**](CHANGELOG.md)
 
 ## 🤝 Kontribusi
 

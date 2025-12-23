@@ -11,6 +11,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
     
     - name: Setup Node.js
       uses: actions/setup-node@v4
@@ -36,31 +38,37 @@ jobs:
         zip -r ../../vaizbtgads-chrome-${{ github.ref_name }}.zip .
         cd ../..
     
-    - name: Generate changelog
+    - name: Generate changelog for release
       id: changelog
       run: |
         echo "## 🚀 What's New in ${{ github.ref_name }}" > RELEASE_NOTES.md
         echo "" >> RELEASE_NOTES.md
-        echo "### ✨ Features" >> RELEASE_NOTES.md
-        echo "- Efficient ad and popup blocking" >> RELEASE_NOTES.md
-        echo "- Privacy protection with tracker blocking" >> RELEASE_NOTES.md
-        echo "- Lightweight and fast performance" >> RELEASE_NOTES.md
-        echo "- User-friendly dashboard and popup interface" >> RELEASE_NOTES.md
-        echo "- Whitelist management for trusted sites" >> RELEASE_NOTES.md
+        
+        # Extract version section from CHANGELOG.md
+        VERSION="${{ github.ref_name }}"
+        VERSION_NO_V="${VERSION#v}"
+        
+        # Find the section for this version in CHANGELOG.md
+        awk "/## \[$VERSION_NO_V\]/{flag=1; next} /## \[/{flag=0} flag" CHANGELOG.md >> RELEASE_NOTES.md
+        
         echo "" >> RELEASE_NOTES.md
-        echo "### 🛡️ Privacy & Security" >> RELEASE_NOTES.md
-        echo "- No data collection or external tracking" >> RELEASE_NOTES.md
-        echo "- All processing done locally" >> RELEASE_NOTES.md
-        echo "- Open source and auditable code" >> RELEASE_NOTES.md
+        echo "## 📋 Full Changelog" >> RELEASE_NOTES.md
         echo "" >> RELEASE_NOTES.md
-        echo "### 📦 Installation" >> RELEASE_NOTES.md
-        echo "- **Firefox**: Download \`vaizbtgads-firefox-${{ github.ref_name }}.zip\`" >> RELEASE_NOTES.md
-        echo "- **Chrome**: Download \`vaizbtgads-chrome-${{ github.ref_name }}.zip\`" >> RELEASE_NOTES.md
+        echo "**See the complete changelog**: [CHANGELOG.md](https://github.com/${{ github.repository }}/blob/main/CHANGELOG.md)" >> RELEASE_NOTES.md
         echo "" >> RELEASE_NOTES.md
-        echo "### 🔧 Technical Details" >> RELEASE_NOTES.md
-        echo "- Manifest V2 compatible" >> RELEASE_NOTES.md
-        echo "- Cross-browser support (Firefox & Chrome)" >> RELEASE_NOTES.md
-        echo "- Minimal memory footprint" >> RELEASE_NOTES.md
+        echo "## 📦 Installation" >> RELEASE_NOTES.md
+        echo "" >> RELEASE_NOTES.md
+        echo "### Firefox" >> RELEASE_NOTES.md
+        echo "1. Download \`vaizbtgads-firefox-${{ github.ref_name }}.zip\`" >> RELEASE_NOTES.md
+        echo "2. Extract and load as temporary add-on in Firefox" >> RELEASE_NOTES.md
+        echo "" >> RELEASE_NOTES.md
+        echo "### Chrome" >> RELEASE_NOTES.md
+        echo "1. Download \`vaizbtgads-chrome-${{ github.ref_name }}.zip\`" >> RELEASE_NOTES.md
+        echo "2. Extract and load as unpacked extension in Chrome" >> RELEASE_NOTES.md
+        echo "" >> RELEASE_NOTES.md
+        echo "---" >> RELEASE_NOTES.md
+        echo "" >> RELEASE_NOTES.md
+        echo "**Compare changes**: [\`${{ github.ref_name }}\`](https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }})" >> RELEASE_NOTES.md
     
     - name: Create Release
       uses: softprops/action-gh-release@v1
@@ -71,5 +79,6 @@ jobs:
           vaizbtgads-chrome-${{ github.ref_name }}.zip
         draft: false
         prerelease: false
+        generate_release_notes: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
