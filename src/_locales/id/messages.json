@@ -1,0 +1,58 @@
+{
+  "extName": {
+    "message": "Vaizbtgads",
+    "description": "Nama ekstensi"
+  },
+  "extShortDesc": {
+    "message": "Vaizbtgads - Pemblokir Konten untuk Browser",
+    "description": "Deskripsi ekstensi"
+  },
+  "toggleBlocking": {
+    "message": "Aktif/nonaktif pemblokiran",
+    "description": "Perintah toggle blocking"
+  },
+  "openDashboard": {
+    "message": "Buka dashboard",
+    "description": "Perintah buka dashboard"
+  },
+  "popupTitle": {
+    "message": "Vaizbtgads",
+    "description": "Judul popup"
+  },
+  "dashboardTitle": {
+    "message": "Dashboard Vaizbtgads",
+    "description": "Judul dashboard"
+  },
+  "statsBlocked": {
+    "message": "Diblokir",
+    "description": "Label jumlah yang diblokir"
+  },
+  "statsRequests": {
+    "message": "Permintaan",
+    "description": "Label jumlah permintaan"
+  },
+  "buttonToggle": {
+    "message": "Aktif/Nonaktif",
+    "description": "Tombol toggle"
+  },
+  "buttonDashboard": {
+    "message": "Dashboard",
+    "description": "Tombol dashboard"
+  },
+  "buttonWhitelist": {
+    "message": "Daftar Putih",
+    "description": "Tombol whitelist"
+  },
+  "settingsBlockPopups": {
+    "message": "Blokir Pop-up",
+    "description": "Pengaturan blokir popup"
+  },
+  "settingsBlockTrackers": {
+    "message": "Blokir Pelacak",
+    "description": "Pengaturan blokir tracker"
+  },
+  "settingsShowNotifications": {
+    "message": "Tampilkan Notifikasi",
+    "description": "Pengaturan tampilkan notifikasi"
+  }
+}

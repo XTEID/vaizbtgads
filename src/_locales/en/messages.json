@@ -1,0 +1,58 @@
+{
+  "extName": {
+    "message": "Vaizbtgads",
+    "description": "Extension name"
+  },
+  "extShortDesc": {
+    "message": "Vaizbtgads - Content Blocker untuk Browser",
+    "description": "Extension description"
+  },
+  "toggleBlocking": {
+    "message": "Toggle blocking on/off",
+    "description": "Toggle blocking command"
+  },
+  "openDashboard": {
+    "message": "Open dashboard",
+    "description": "Open dashboard command"
+  },
+  "popupTitle": {
+    "message": "Vaizbtgads",
+    "description": "Popup title"
+  },
+  "dashboardTitle": {
+    "message": "Vaizbtgads Dashboard",
+    "description": "Dashboard title"
+  },
+  "statsBlocked": {
+    "message": "Diblokir",
+    "description": "Blocked count label"
+  },
+  "statsRequests": {
+    "message": "Permintaan",
+    "description": "Requests count label"
+  },
+  "buttonToggle": {
+    "message": "Toggle",
+    "description": "Toggle button"
+  },
+  "buttonDashboard": {
+    "message": "Dashboard",
+    "description": "Dashboard button"
+  },
+  "buttonWhitelist": {
+    "message": "Whitelist",
+    "description": "Whitelist button"
+  },
+  "settingsBlockPopups": {
+    "message": "Block Pop-ups",
+    "description": "Block popups setting"
+  },
+  "settingsBlockTrackers": {
+    "message": "Block Trackers",
+    "description": "Block trackers setting"
+  },
+  "settingsShowNotifications": {
+    "message": "Show Notifications",
+    "description": "Show notifications setting"
+  }
+}

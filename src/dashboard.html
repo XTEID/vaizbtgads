@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Vaizbtgads Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <div class="header-content">
+                <img src="img/icon.svg" alt="Vaizbtgads" class="logo">
+                <h1>Vaizbtgads Dashboard</h1>
+            </div>
+        </header>
+        
+        <nav class="dashboard-nav">
+            <ul>
+                <li><a href="#overview" class="nav-link active">Overview</a></li>
+                <li><a href="#filters" class="nav-link">Filter Lists</a></li>
+                <li><a href="#whitelist" class="nav-link">Whitelist</a></li>
+                <li><a href="#settings" class="nav-link">Settings</a></li>
+            </ul>
+        </nav>
+        
+        <main class="dashboard-main">
+            <section id="overview" class="dashboard-section active">
+                <h2>Overview</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Total Blocked</h3>
+                        <span class="stat-value" id="total-blocked">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Requests Today</h3>
+                        <span class="stat-value" id="requests-today">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Active Filters</h3>
+                        <span class="stat-value" id="active-filters">0</span>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="filters" class="dashboard-section">
+                <h2>Filter Lists</h2>
+                <div class="filter-lists">
+                    <div class="filter-item">
+                        <label>
+                            <input type="checkbox" checked> EasyList
+                        </label>
+                    </div>
+                    <div class="filter-item">
+                        <label>
+                            <input type="checkbox" checked> EasyPrivacy
+                        </label>
+                    </div>
+                    <div class="filter-item">
+                        <label>
+                            <input type="checkbox"> Fanboy's Annoyances
+                        </label>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="whitelist" class="dashboard-section">
+                <h2>Whitelisted Sites</h2>
+                <div class="whitelist-container">
+                    <input type="text" id="whitelist-input" placeholder="Masukkan domain (contoh: example.com)">
+                    <button id="add-whitelist">Tambah</button>
+                </div>
+                <ul id="whitelist-list"></ul>
+            </section>
+            
+            <section id="settings" class="dashboard-section">
+                <h2>Settings</h2>
+                <div class="settings-group">
+                    <label>
+                        <input type="checkbox" id="block-popups" checked> Block Pop-ups
+                    </label>
+                </div>
+                <div class="settings-group">
+                    <label>
+                        <input type="checkbox" id="block-trackers" checked> Block Trackers
+                    </label>
+                </div>
+                <div class="settings-group">
+                    <label>
+                        <input type="checkbox" id="show-notifications"> Show Notifications
+                    </label>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="js/vapi.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

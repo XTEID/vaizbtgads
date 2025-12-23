@@ -1,0 +1,68 @@
+{
+  "author": "Developer & contributors",
+  "background": {
+    "page": "background.html",
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "img/icon_16.png",
+      "32": "img/icon_32.png",
+      "64": "img/icon_64.png"
+    },
+    "default_title": "Vaizbtgads",
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "_execute_browser_action": {},
+    "toggle-blocking": {
+      "description": "Toggle blocking on/off"
+    },
+    "open-dashboard": {
+      "description": "Open dashboard"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "/js/vapi.js",
+        "/js/contentscript.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_start"
+    }
+  ],
+  "default_locale": "en",
+  "description": "Vaizbtgads - Content Blocker untuk Browser",
+  "icons": {
+    "16": "img/icon.svg",
+    "32": "img/icon.svg",
+    "48": "img/icon.svg",
+    "64": "img/icon.svg",
+    "96": "img/icon.svg",
+    "128": "img/icon.svg"
+  },
+  "manifest_version": 2,
+  "name": "Vaizbtgads",
+  "options_ui": {
+    "page": "dashboard.html",
+    "open_in_tab": true
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "webNavigation",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "short_name": "Vaizbtgads",
+  "version": "1.0.0",
+  "web_accessible_resources": [
+    "/web_accessible_resources/*"
+  ]
+}
