@@ -75,10 +75,10 @@ npm run build
 npm run build
 
 # Validasi extension
-node tools/validate.js
+npm run validate
 
-# Buat package untuk submission
-node tools/create-firefox-zip-manual.js
+# Test extension
+npm test
 ```
 
 ### 🎯 Cara Penggunaan
